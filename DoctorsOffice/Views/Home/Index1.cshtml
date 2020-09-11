@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Slicarousel Plugin Example</title>
+    <link href="~/clairolSliders/css/slicarousel.css" rel="stylesheet" />
+    <link href="~/clairolSliders/css/style.css" rel="stylesheet" />
+    <!-- Demo CSS -->
+    <link href="~/clairolSliders/css/demo.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main>
+        <article>
+            <div class="container">
+                <div class="the_slider">
+
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- jQuery -->
+    <script src="~/clairolSliders/js/jquery.min.js"></script>
+    <script src="~/clairolSliders/js/slicarousel.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".the_slider").slicarousel();
+
+        });
+    </script>
+
+</body>
+</html>
+
+
+

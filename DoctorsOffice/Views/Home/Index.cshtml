@@ -1,0 +1,328 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    @*<title>W3.CSS</title>*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Propeller CSS -->
+    <link href="~/propeller-user-manual.min.css" rel="stylesheet" />
+
+
+    <style>
+        .mySlides {
+            border-radius: 209px;
+            height: 100%;
+            width: 380%;
+        }
+
+        img {
+            height: 500px !important;
+            width: 300px !important;
+        }
+
+        /*Left Align*/
+        body {
+            background-color: #ededed;
+        }
+
+        .fab {
+            background-color: transparent;
+            height: 64px;
+            width: 64px;
+            border-radius: 32px;
+            transition: height 300ms;
+            transition-timing-function: ease;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+            .fab:hover {
+                height: 344px;
+            }
+
+                .fab:hover .mainop {
+                    transform: rotate(180deg);
+                }
+
+
+        .fab1 {
+            background-color: transparent;
+            height: 75px;
+            width: 200px;
+            transition: height 300ms;
+            transition-timing-function: ease;
+            position: absolute;
+            left: 25px;
+            bottom: 63px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        .mainop {
+            margin: auto;
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: transform 300ms;
+            background-color: #f44336;
+            border-radius: 32px;
+            z-index: 6;
+        }
+
+
+        .mainop1 {
+            margin: auto;
+            width: auto;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: transform 300ms;
+            background-color: #f44336;
+            z-index: 6;
+        }
+
+
+        .mainopShadow {
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+
+        .mainop i {
+            margin-top: 16px;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .minifab {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            border-radius: 24px;
+            z-index: 5;
+            float: left;
+            margin-bottom: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            background-color: blue;
+            transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+            .minifab:hover {
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            }
+
+        .minifabIcon {
+            height: 24px;
+            width: 24px;
+            margin-top: 12px;
+        }
+
+        .op1 {
+            background-color: #2f82fc;
+        }
+
+        .op2 {
+            background-color: #0f9d58;
+        }
+
+        .op3 {
+            background-color: #fb0;
+        }
+
+        .op4 {
+            background-color: #dd5145;
+        }
+
+        .op5 {
+            background-color: #673ab7;
+        }
+
+        .mainopShadow {
+            left: 20px !important;
+        }
+
+        .fab {
+            left: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container" style="padding:5%">
+        <div class="row col-sm-12">
+            <div class="col-sm-8">
+                <div class="Slides">
+                    <div class="col-sm-12" style="margin-bottom:5%;padding-top:15%">
+                        <div style="width:400px;height:150px;border:1px solid #ffd800;font-size:45px;text-align:center;background-color:burlywood">
+                            <label style="margin:10%">Dr. SriHari</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  align-items-center justify-content-center" style="margin-bottom:5%">
+                        <label style="margin-left: 1%;font-weight:bold">
+                            OVER 4000 SUCCESSFUL SURGERIES SINCE 2000
+                        </label>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6" style="display: inline;">
+                            @*<button type="button" class="btn btn-warning" style="color:white;"> CONTACT </button>*@
+                            <input type=button onClick="location.href='Srihari'" value='Contact' class="btn btn-warning" style="color:white;">
+                        </div>
+                    </div>
+                </div>
+                @*<div class="Slides">
+                    <div class="col-sm-12" style="margin-bottom:5%;padding-top:15%">
+                        <div style="width:400px;height:150px;border:1px solid #ffd800;font-size:45px;text-align:center;background-color:burlywood">
+                            <label style="margin:10%">Dr.Sumanth</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  align-items-center justify-content-center" style="margin-bottom:5%">
+                        <label style="margin-left: 7%;font-weight:bold">
+                            OVER 4000 SUCCESSFUL 2000
+                        </label>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6" style="display: inline;">*@
+                @*<button type="button" class="btn btn-warning" style="color:white;"> CONTACT </button>*@
+                @*<input type=button onClick="location.href='Sumanth'" value='Contact' class="btn btn-warning" style="color:white;">
+                            </div>
+                        </div>
+                    </div>*@
+                @*<div class="Slides">
+                    <div class="col-sm-12" style="margin-bottom:5%;padding-top:15%">
+                        <div style="width:400px;height:150px;border:1px solid #ffd800;font-size:45px;text-align:center;background-color:burlywood">
+                            <label style="margin:10%">Dr.Amar</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  align-items-center justify-content-center" style="margin-bottom:5%">
+                        <label style="margin-left: 7%;font-weight:bold">
+                            SUCCESSFUL SURGERIES SINCE 2000
+                        </label>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6" style="display: inline;">*@
+                @*<button type="button" class="btn btn-warning" style="color:white;"> CONTACT </button>*@
+                @*<input type=button onClick="location.href='Amar'" value='Contact' class="btn btn-warning" style="color:white;">
+                            </div>
+                        </div>
+                    </div>*@
+
+            </div>
+
+            <div class="col-sm-4">
+                @*<img class="mySlides" src="~/Images/imgDoctor3.jpg" />
+                    <img class="mySlides" src="~/Images/imgDoctor4.jpg" />
+                    <img class="mySlides" src="~/Images/imgDoctor5.jpg" />*@
+                <img class="mySlides" src="~/Images/DoctorImg1.jpg" />
+            </div>
+
+        </div>
+
+    </div>
+
+    @*Left align code*@
+
+    <div class="mainopShadow"></div>
+    <div class="fab">
+        <div class="mainop">
+            <i id="addIcon" class="fa fa-mobile"></i>
+        </div>
+        <div id="slides" class="minifab op3" style="margin-top: 170%;">
+            <a class="fa fa-phone" style="margin-top: 18%;font-size: 217%;color:white" href="https://globfone.com/call-phone/" title="Call Me!"></a>
+        </div>
+        <div id="sheets" class="minifab op2">
+            <a class="fa fa-envelope" style="margin-top: 29%;font-size: 146%;color:white" title="Email Me" href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession"></a>
+        </div>
+        <div id="docs" class="minifab op1">
+            <a class="fa fa-whatsapp" style="margin-top: 22%;font-size: 173%;color:white" title="Whats App" href="https://api.whatsapp.com/send?phone=+918019633239&text=&source=&data=&app_absent="></a>
+        </div>
+    </div>
+    <div class="fab1" style="margin-left:-.5%;">
+        <div class="mainop1">
+            <button type="button" class="btn btn-secondary"> APPOINTMENTS </button>
+        </div>
+    </div>
+
+    <script>
+
+        var myIndexDesc = 0;
+        descCarousel();
+
+        function descCarousel() {
+            var i;
+            var x = document.getElementsByClassName("Slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndexDesc++;
+            if (myIndexDesc > x.length) { myIndexDesc = 1 }
+            x[myIndexDesc - 1].style.display = "block";
+            setTimeout(descCarousel, 2000); // Change image every 2 seconds
+        }
+
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+        $(".fab1").hover(function () {
+
+            $(".fab").addClass('hover');
+
+        });
+
+    </script>
+</body>
+</html>
+
+
